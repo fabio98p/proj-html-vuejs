@@ -81,8 +81,13 @@
 					</div>
 				</div>
 				<div class="get_start">
+					<!-- todo: alcune immagini sono messe al contrario rispetto al testo, da risolvere -->
 					<div class="cards">
-						<div class="card" v-for="card in 4"></div>
+						<div class="card" v-for="(card, i) in 4" :class="(i == 2)?'third':''">
+							<h3>Graphic Design</h3>
+							<p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.</p>
+							<img src="./assets/img/home-6-service-image-01.png" alt="">
+						</div>
 					</div>
 					<div class="info_for_start">
 						<p>thoghether we can create</p>
