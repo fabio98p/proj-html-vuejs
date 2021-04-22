@@ -6,6 +6,13 @@
   float: right;
 }
 
+.btn {
+  background-color: #1fad96;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 5px;
+}
+
 .no_style {
   list-style-type: none;
 }
@@ -83,11 +90,62 @@ nav .right .search button {
 }
 
 #jumbo {
-  padding-top: 94px;
+  margin-top: 94px;
+  background-image: url(../../assets/img/background_wave.svg);
+  transform: rotate(180deg);
+  fill: white;
 }
 #jumbo .contained {
-  height: 500px;
-  background-image: url(../../assets/img/background_wave.svg);
+  height: 600px;
+  transform: rotate(180deg);
+}
+#jumbo .contained h1 {
+  color: #ffffff;
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+#jumbo .contained p {
+  color: #6c6c6c;
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+#jumbo .positionament {
+  position: relative;
+  transform: rotate(180deg);
+}
+#jumbo .positionament .left {
+  position: absolute;
+  top: 200px;
+  left: 20%;
+  transform: translate(-50%, 0);
+}
+#jumbo .positionament .card {
+  width: 770px;
+  height: 463px;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+#jumbo .positionament .card .placeolder_img {
+  height: 100%;
+  width: 100%;
+}
+#jumbo .positionament .card .logo_youtube {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10%;
+}
+#jumbo .positionament .right {
+  position: absolute;
+  top: 390px;
+  left: 78%;
+  transform: translate(-50%, 0);
 }
 
 header {

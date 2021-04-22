@@ -1,9 +1,78 @@
 #jumbo{
-	padding-top: 94px;
-
+	margin-top: 94px;
+	
+	background-image: url(../../assets/img/background_wave.svg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	fill: white;
+	//prende il fill solo se l'immagine e' con la scrittura svg completa e non impostata
 	.contained{
-		height: 500px;
-		background-image: url(../../assets/img/background_wave.svg);
+		height: 600px;
+		//todo: sistemare il background che e' un loop di stortaggine
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+		h1{
+			color: $white;
+			font-size: 60px;
+			margin-bottom: 15px
+		}
+		p{
+			color: $gray;
+			font-size: 25px;
+			margin-bottom: 35px
+		}
 	}
+	.positionament{
+		position: relative;
 
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+		.left
+		{
+			position: absolute;
+			top: 200px;
+			left: 20%;
+			transform: translate(-50%, 0);
+		}
+		.card{
+			//todo: tentare di fare in modo che non sia la card a determinare la grandezza ma l'immagine
+			width: 770px;
+			height: 463px;
+			position: absolute;
+			top: 250px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			padding: 30px;
+			background-color: white;
+			border-radius: 10px;
+			.placeolder_img{
+				height: 100%;
+				width: 100%;
+			}
+			.logo_youtube{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				height: 10%;
+			}
+		}
+		.right
+		{
+			position: absolute;
+			top: 390px;
+			left: 78%;
+			transform: translate(-50%, 0);
+		}
+
+	}
 }
