@@ -11,6 +11,7 @@
   color: white;
   padding: 20px 50px;
   border-radius: 5px;
+  font-weight: bolder;
 }
 
 .no_style {
@@ -150,4 +151,84 @@ nav .right .search button {
 
 header {
   background-color: #1f2154;
+}
+
+#free_start {
+  padding-top: 318px;
+  background-image: url(../../assets/img/background-pattern-grid-line.png);
+}
+#free_start .title {
+  margin-bottom: 150px;
+}
+#free_start .title h2 {
+  width: 60%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+#free_start .title .autor {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+#free_start .title .founder {
+  font-size: 18px;
+  color: #bcbcbc;
+}
+#free_start .numbers {
+  display: flex;
+  justify-content: space-around;
+}
+#free_start .numbers .data {
+  width: 25%;
+  font-size: 0;
+}
+#free_start .numbers .data .number {
+  font-size: 40px;
+  color: #1fad96;
+  font-weight: bolder;
+}
+#free_start .numbers .data .mean {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #6c6c6c;
+}
+#free_start .get_start {
+  margin-top: 120px;
+  margin-bottom: 70px;
+}
+#free_start .get_start > * {
+  width: 50%;
+}
+#free_start .get_start .info_for_start {
+  padding: 100px;
+}
+#free_start .get_start .info_for_start p {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#free_start .get_start .info_for_start h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+#free_start .get_start .info_for_start h1 span {
+  font-weight: normal;
+  color: #1fad96;
+}
+#free_start .get_start .info_for_start ul {
+  list-style-type: none;
+}
+#free_start .get_start .info_for_start ul li {
+  margin-bottom: 20px;
+}
+#free_start .get_start .info_for_start ul li i {
+  color: #1fad96;
+  margin-right: 25px;
+}
+#free_start .get_start .info_for_start button {
+  margin-top: 20px;
 }

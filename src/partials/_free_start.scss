@@ -1,0 +1,83 @@
+#free_start{
+	padding-top: 318px;
+	background-image: url(../../assets/img/background-pattern-grid-line.png);
+	.title{
+		margin-bottom: 150px;
+		h2{
+			width: 60%;
+			margin: 0 auto;
+			font-weight: bold;
+			font-size: 40px;
+			margin-bottom: 30px;
+		}
+		.autor{
+			font-size: 20px;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+			font-weight: bold;
+		}
+		.founder{
+			font-size: 18px;
+			color: $silver;
+		}
+	}
+	.numbers{
+		display: flex;
+		justify-content: space-around;
+		.data{
+			width: 25%;
+			font-size: 0;
+
+			.number{
+				font-size: 40px;
+				color: $green_sea;
+				font-weight: bolder;
+			}
+			.mean{
+				font-size: 18px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $gray;
+			}
+		}
+	}
+	.get_start{
+		margin-top: 120px;
+    	margin-bottom: 70px;
+		>*{
+			width: 50%;
+		}
+		.cards{
+
+		}
+		.info_for_start{
+			padding: 100px;
+			p{
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+			h1{
+				font-size: 50px;
+				font-weight: bold;
+				margin-bottom: 40px;
+				span{
+					font-weight: normal;
+					color: $green_sea;
+				}
+			}
+			ul{
+				list-style-type: none;
+				li{
+					margin-bottom: 20px;
+					i{
+						color: $green_sea;
+						margin-right: 25px;
+					}
+				}
+			}
+			button{
+				margin-top: 20px;
+			}
+		}
+	}
+}
