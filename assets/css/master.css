@@ -198,7 +198,6 @@ header {
 }
 #free_start .get_start {
   margin-top: 120px;
-  margin-bottom: 70px;
   height: 1000px;
   display: flex;
   justify-content: space-between;
@@ -259,4 +258,43 @@ header {
 }
 #free_start .get_start .info_for_start button {
   margin-top: 20px;
+}
+
+#choose_abbonament {
+  background-color: silver;
+}
+#choose_abbonament .title p {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+#choose_abbonament .title h1 {
+  font-size: 40px;
+}
+#choose_abbonament .title h1 .green {
+  color: #1fad96;
+}
+#choose_abbonament .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+#choose_abbonament .cards .card {
+  width: 50%;
+  display: flex;
+}
+#choose_abbonament .cards .card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#choose_abbonament .cards .card .text div {
+  display: inline-block;
+}
+#choose_abbonament .cards .card .text h3 {
+  color: #1fad96;
+}
+#choose_abbonament .cards .card .text .lessons {
+  color: #6c6c6c;
+}
+#choose_abbonament .cards .card .text .students {
+  color: #6c6c6c;
 }

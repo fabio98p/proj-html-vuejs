@@ -1,0 +1,45 @@
+#choose_abbonament{
+	background-color: silver;
+	.title{
+		p{
+			text-transform: uppercase;
+			font-weight: 100;
+		}
+		h1{
+			font-size: 40px;
+			.green{
+				color: $green_sea;
+			}
+		}
+	}
+	.cards{
+		display: flex;
+		flex-wrap: wrap;
+		.card{
+			width: 50%;
+			display: flex;
+			img{
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+			}
+			.text{
+				div{
+					display: inline-block;
+				}
+				h3{
+					color: $green_sea;
+				}
+				p{
+					
+				}
+				.lessons{
+					color: $gray;
+				}
+				.students{
+					color: $gray;
+				}
+			}
+		}
+	}
+}
