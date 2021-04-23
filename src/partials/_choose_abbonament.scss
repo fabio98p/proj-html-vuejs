@@ -1,5 +1,6 @@
 #choose_abbonament{
 	background-color: silver;
+	padding: 80px 0;
 	.title{
 		p{
 			text-transform: uppercase;
@@ -16,22 +17,35 @@
 		display: flex;
 		flex-wrap: wrap;
 		.card{
-			width: 50%;
+			width: 45%;
+			padding: 15px;
 			display: flex;
+			margin: 30px 2.5%;
+			transition: all 0.5s;
+			&:hover{
+				background-color: white;
+			}
 			img{
 				width: 150px;
 				height: 150px;
 				border-radius: 50%;
 			}
 			.text{
+				margin-left: 30px;
+				width: 60%;
 				div{
 					display: inline-block;
 				}
 				h3{
 					color: $green_sea;
+					font-size: 30px;
+					margin-bottom: 10px;
+					margin-top: 10px;
 				}
 				p{
-					
+					margin-bottom: 10px;
+					font-size: 20px;
+					font-weight: bold;
 				}
 				.lessons{
 					color: $gray;
@@ -41,5 +55,8 @@
 				}
 			}
 		}
+	}
+	button{
+		margin: 30px auto 0 auto;
 	}
 }

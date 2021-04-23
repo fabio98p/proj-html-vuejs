@@ -7,7 +7,7 @@
 }
 
 .btn {
-  background-color: #1fad96;
+  background-color: #AD611F;
   color: white;
   padding: 20px 50px;
   border-radius: 5px;
@@ -86,7 +86,7 @@ nav .right .search input {
 nav .right .search button {
   border-radius: 0 5px 5px 0;
   padding: 15px;
-  color: #1fad96;
+  color: #AD611F;
   background-color: #ffffff;
 }
 
@@ -187,7 +187,7 @@ header {
 }
 #free_start .numbers .data .number {
   font-size: 40px;
-  color: #1fad96;
+  color: #AD611F;
   font-weight: bolder;
 }
 #free_start .numbers .data .mean {
@@ -244,7 +244,7 @@ header {
 }
 #free_start .get_start .info_for_start h1 span {
   font-weight: normal;
-  color: #1fad96;
+  color: #AD611F;
 }
 #free_start .get_start .info_for_start ul {
   list-style-type: none;
@@ -253,7 +253,7 @@ header {
   margin-bottom: 20px;
 }
 #free_start .get_start .info_for_start ul li i {
-  color: #1fad96;
+  color: #AD611F;
   margin-right: 25px;
 }
 #free_start .get_start .info_for_start button {
@@ -262,6 +262,7 @@ header {
 
 #choose_abbonament {
   background-color: silver;
+  padding: 80px 0;
 }
 #choose_abbonament .title p {
   text-transform: uppercase;
@@ -271,30 +272,51 @@ header {
   font-size: 40px;
 }
 #choose_abbonament .title h1 .green {
-  color: #1fad96;
+  color: #AD611F;
 }
 #choose_abbonament .cards {
   display: flex;
   flex-wrap: wrap;
 }
 #choose_abbonament .cards .card {
-  width: 50%;
+  width: 45%;
+  padding: 15px;
   display: flex;
+  margin: 30px 2.5%;
+  transition: all 0.5s;
+}
+#choose_abbonament .cards .card:hover {
+  background-color: white;
 }
 #choose_abbonament .cards .card img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
+#choose_abbonament .cards .card .text {
+  margin-left: 30px;
+  width: 60%;
+}
 #choose_abbonament .cards .card .text div {
   display: inline-block;
 }
 #choose_abbonament .cards .card .text h3 {
-  color: #1fad96;
+  color: #AD611F;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#choose_abbonament .cards .card .text p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 #choose_abbonament .cards .card .text .lessons {
   color: #6c6c6c;
 }
 #choose_abbonament .cards .card .text .students {
   color: #6c6c6c;
+}
+#choose_abbonament button {
+  margin: 30px auto 0 auto;
 }
