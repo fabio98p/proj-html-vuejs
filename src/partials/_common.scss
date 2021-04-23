@@ -5,6 +5,10 @@
 	float: right;
 }
 
+.gray_text{
+	color: $gray_text;
+}
+
 .btn{
 	background-color: $green_sea;
 	color: white;
@@ -38,5 +42,4 @@
 			color: $green_sea;
 		}
 	}
-
 }

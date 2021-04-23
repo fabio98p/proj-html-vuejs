@@ -1,6 +1,7 @@
 #spam_maxcoach{
-	padding: 100px 0;
-	// background: linear-gradient(top, #EEF1F4 0%, white 100%);
+	padding: 100px 0 650px 0; 
+	background: linear-gradient( white, #EEF1F4);
+	position: relative;
 	.title{
 
 	}
@@ -23,7 +24,11 @@
 		}
 	}
 	img{
-		width: 100%;
+		width: 1220px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 0);
+		bottom: -35px;
 	}
 
 }

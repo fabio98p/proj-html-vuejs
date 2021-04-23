@@ -1,3 +1,14 @@
 #start_now{
-	
+	padding: 120px 0;
+	h3{
+		font-size: 25px;
+		.green{
+			font-weight: 100;
+			color: $green_sea;
+		}
+	}
+	h2{
+		font-size: 40px;
+		margin-bottom: 30px;
+	}
 }

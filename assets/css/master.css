@@ -6,6 +6,10 @@
   float: right;
 }
 
+.gray_text {
+  color: #333333;
+}
+
 .btn {
   background-color: #AD611F;
   color: white;
@@ -404,7 +408,9 @@ header {
 }
 
 #spam_maxcoach {
-  padding: 100px 0;
+  padding: 100px 0 650px 0;
+  background: linear-gradient(white, #EEF1F4);
+  position: relative;
 }
 #spam_maxcoach .cards {
   display: flex;
@@ -425,5 +431,24 @@ header {
   font-size: 18px;
 }
 #spam_maxcoach img {
-  width: 100%;
+  width: 1220px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -35px;
+}
+
+#start_now {
+  padding: 120px 0;
+}
+#start_now h3 {
+  font-size: 25px;
+}
+#start_now h3 .green {
+  font-weight: 100;
+  color: #AD611F;
+}
+#start_now h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
 }
