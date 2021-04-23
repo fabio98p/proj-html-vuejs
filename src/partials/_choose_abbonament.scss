@@ -1,18 +1,6 @@
 #choose_abbonament{
 	background-color: silver;
 	padding: 80px 0;
-	.title{
-		p{
-			text-transform: uppercase;
-			font-weight: 100;
-		}
-		h1{
-			font-size: 40px;
-			.green{
-				color: $green_sea;
-			}
-		}
-	}
 	.cards{
 		display: flex;
 		flex-wrap: wrap;
