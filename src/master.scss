@@ -2,15 +2,15 @@
 @import "partials/mixin";
 @import "partials/common";
 @import "partials/normalize";
+@import "partials/cards";
 @import "partials/header";
 @import "partials/footer";
 
 // #region inport for main part
-@import "partials/free_start";
-@import "partials/choose_abbonament";
-@import "partials/about_maxcoach";
-@import "partials/when_finisched";
-@import "partials/spam_maxcoach";
-@import "partials/start_now";
-
+@import "partials/main_free_start";
+@import "partials/main_choose_abbonament";
+@import "partials/main_about_maxcoach";
+@import "partials/main_when_finisched";
+@import "partials/main_spam_maxcoach";
+@import "partials/main_start_now";
 // #endregion

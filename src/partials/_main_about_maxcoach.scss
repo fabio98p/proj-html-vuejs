@@ -1,0 +1,13 @@
+#about_maxcoach{
+	margin: 70px auto;
+	.logos{
+		display: flex;
+		.logo{
+			width: calc(100% * (1/6));
+			width: 100%;
+			img{
+				max-width: 80%;
+			}
+		}
+	}
+}

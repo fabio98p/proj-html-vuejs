@@ -83,11 +83,12 @@
 				</div>
 				<div class="get_start">
 					<!-- todo: alcune immagini sono messe al contrario rispetto al testo, da risolvere -->
-					<div class="cards">
-						<div class="card" v-for="(card, i) in 4" :class="(i == 2)?'third':''">
-							<h3>Graphic Design</h3>
-							<p>Have a passion for graphics and arts? Show your talents with confidence and
-								self-assertiveness.</p>
+					<div class="card_service">
+						<div class="card" v-for="(card, i) in 4" :class="(i == 2)?'margined':''">
+							<div class="text">
+								<h3>Graphic Design</h3>
+								<p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.</p>
+							</div>
 							<img src="./assets/img/home-6-service-image-01.png" alt="">
 						</div>
 					</div>
@@ -109,7 +110,7 @@
 						<p>choose a course to get started</p>
 						<h1>Latest Featured <span class="green">Courses</span></h1>
 					</div>
-					<div class="cards">
+					<div class="card_courses">
 						<div class="card" v-for="card in 6">
 							<img src="./assets/img/stock-full-hd-03-480x298.jpg" alt="">
 							<div class="text">
@@ -133,7 +134,7 @@
 				<div class="title">
 					<h1 class="center">Why People Talk About <span class="green">MaxCoach</span>?</h1>
 				</div>
-				<div class="cards">
+				<div class="card_about">
 					<div class="card">
 						<div class="img">
 							<img src="./assets/img/testimonial-avata-02.jpg" alt="">
@@ -157,7 +158,7 @@
 						<p>enjoy reading on maxcoach</p>
 						<h1>Latest on <span class="green">Our Blogs</span></h1>
 					</div>
-					<div class="cards">
+					<div class="card_blog">
 						<div class="card" v-for="card in 3">
 							<div class="img">
 								<img src="./assets/img/artist-blog-03-480x325.jpeg" alt="">
@@ -184,7 +185,7 @@
 						<p>wanna transform your live?</p>
 						<h1 class="title">Glad to <span class="green">Help You</span> Learn</h1>
 					</div>
-					<div class="cards">
+					<div class="card_help">
 						<div class="card" v-for="card in 4">
 							<i class="far fa-flag"></i>
 							<h3>Idea Discussion</h3>

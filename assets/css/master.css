@@ -54,6 +54,161 @@
   box-sizing: border-box;
 }
 
+.card_service {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.card_service .card {
+  width: 40%;
+  background-color: white;
+  margin: 25px 0;
+  box-shadow: 1px 1px 5px 5px #f7f7f7;
+}
+.card_service .card.margined {
+  margin-top: 120px;
+}
+.card_service .card .text {
+  padding: 20px 20px 0 20px;
+}
+.card_service .card .text h3 {
+  margin-bottom: 10px;
+}
+.card_service .card .text p {
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.card_service .card img {
+  padding-right: 20px;
+  width: 100%;
+}
+
+.card_courses {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card_courses .card {
+  width: 45%;
+  padding: 15px;
+  display: flex;
+  margin: 30px 2.5%;
+  transition: all 0.5s;
+}
+.card_courses .card:hover {
+  background-color: white;
+}
+.card_courses .card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.card_courses .card .text {
+  margin-left: 30px;
+  width: 60%;
+}
+.card_courses .card .text div {
+  display: inline-block;
+}
+.card_courses .card .text h3 {
+  color: #AD611F;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.card_courses .card .text p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card_courses .card .text .lessons {
+  color: #6c6c6c;
+}
+.card_courses .card .text .students {
+  color: #6c6c6c;
+}
+
+.card_about {
+  margin: 70px 0;
+}
+.card_about .card {
+  display: flex;
+}
+.card_about .card .img {
+  width: calc(100% * (1/3));
+  display: flex;
+  justify-content: center;
+}
+.card_about .card .img img {
+  height: 90%;
+  border-radius: 50%;
+}
+.card_about .card .info {
+  width: calc(100% * (2/3));
+  margin-right: 50px;
+}
+.card_about .card .info p {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.card_about .card .info .autor {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.card_about .card .info .work {
+  color: #6c6c6c;
+}
+
+.card_blog {
+  display: flex;
+  margin-top: 70px;
+}
+.card_blog .card {
+  width: calc(100% * (1/3));
+  padding: 20px;
+}
+.card_blog .card .img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.card_blog .card .text .artist {
+  text-transform: uppercase;
+  color: #6c6c6c;
+  margin: 15px 0;
+}
+.card_blog .card .text p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.card_blog .card .data {
+  display: inline-block;
+  color: #6c6c6c;
+  margin-right: 20px;
+}
+.card_blog .card .view {
+  display: inline-block;
+  color: #6c6c6c;
+}
+
+.card_help {
+  display: flex;
+  margin-top: 70px;
+}
+.card_help .card {
+  width: calc(100% * (1/4));
+}
+.card_help .card i {
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+.card_help .card h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.card_help .card p {
+  font-size: 18px;
+}
+
 nav {
   height: 80px;
   display: flex;
@@ -173,6 +328,10 @@ header {
   background-color: #1f2154;
 }
 
+footer {
+  background-color: #f6f3f6;
+}
+
 #free_start {
   padding-top: 318px;
   background-image: url(../../assets/img/background-pattern-grid-line.png);
@@ -225,31 +384,6 @@ header {
 #free_start .get_start > * {
   width: 50%;
 }
-#free_start .get_start .cards {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-#free_start .get_start .cards .card {
-  width: 40%;
-  padding: 20px 20px 0 20px;
-  background-color: white;
-  margin: 25px 0;
-  box-shadow: 1px 1px 5px 5px #f7f7f7;
-}
-#free_start .get_start .cards .card.third {
-  margin-top: 120px;
-}
-#free_start .get_start .cards .card h3 {
-  margin-bottom: 10px;
-}
-#free_start .get_start .cards .card p {
-  line-height: 26px;
-  margin-bottom: 30px;
-}
-#free_start .get_start .cards .card img {
-  width: 100%;
-}
 #free_start .get_start .info_for_start {
   padding: 100px;
 }
@@ -277,51 +411,8 @@ header {
 }
 
 #choose_abbonament {
-  background-color: silver;
+  background-color: #f6f3f6;
   padding: 80px 0;
-}
-#choose_abbonament .cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-#choose_abbonament .cards .card {
-  width: 45%;
-  padding: 15px;
-  display: flex;
-  margin: 30px 2.5%;
-  transition: all 0.5s;
-}
-#choose_abbonament .cards .card:hover {
-  background-color: white;
-}
-#choose_abbonament .cards .card img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-#choose_abbonament .cards .card .text {
-  margin-left: 30px;
-  width: 60%;
-}
-#choose_abbonament .cards .card .text div {
-  display: inline-block;
-}
-#choose_abbonament .cards .card .text h3 {
-  color: #AD611F;
-  font-size: 30px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-#choose_abbonament .cards .card .text p {
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: bold;
-}
-#choose_abbonament .cards .card .text .lessons {
-  color: #6c6c6c;
-}
-#choose_abbonament .cards .card .text .students {
-  color: #6c6c6c;
 }
 #choose_abbonament button {
   margin: 30px auto 0 auto;
@@ -329,36 +420,6 @@ header {
 
 #about_maxcoach {
   margin: 70px auto;
-}
-#about_maxcoach .cards {
-  margin: 70px 0;
-}
-#about_maxcoach .cards .card {
-  display: flex;
-}
-#about_maxcoach .cards .card .img {
-  width: calc(100% * (1/3));
-  display: flex;
-  justify-content: center;
-}
-#about_maxcoach .cards .card .img img {
-  height: 90%;
-  border-radius: 50%;
-}
-#about_maxcoach .cards .card .info {
-  width: calc(100% * (2/3));
-  margin-right: 50px;
-}
-#about_maxcoach .cards .card .info p {
-  font-size: 35px;
-  margin-bottom: 50px;
-}
-#about_maxcoach .cards .card .info .autor {
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-#about_maxcoach .cards .card .info .work {
-  color: #6c6c6c;
 }
 #about_maxcoach .logos {
   display: flex;
@@ -372,63 +433,14 @@ header {
 }
 
 #when_finished {
-  background-color: #bcbcbc;
+  background-color: #f6f3f6;
   padding: 80px 0;
-}
-#when_finished .cards {
-  display: flex;
-  margin-top: 70px;
-}
-#when_finished .cards .card {
-  width: calc(100% * (1/3));
-  padding: 20px;
-}
-#when_finished .cards .card .img img {
-  width: 100%;
-  border-radius: 5px;
-}
-#when_finished .cards .card .text .artist {
-  text-transform: uppercase;
-  color: #6c6c6c;
-  margin: 15px 0;
-}
-#when_finished .cards .card .text p {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-#when_finished .cards .card .data {
-  display: inline-block;
-  color: #6c6c6c;
-  margin-right: 20px;
-}
-#when_finished .cards .card .view {
-  display: inline-block;
-  color: #6c6c6c;
 }
 
 #spam_maxcoach {
   padding: 100px 0 650px 0;
-  background: linear-gradient(white, #EEF1F4);
+  background: linear-gradient(#ffffff, #f6f3f6);
   position: relative;
-}
-#spam_maxcoach .cards {
-  display: flex;
-  margin-top: 70px;
-}
-#spam_maxcoach .cards .card {
-  width: calc(100% * (1/4));
-}
-#spam_maxcoach .cards .card i {
-  font-size: 60px;
-  margin-bottom: 25px;
-}
-#spam_maxcoach .cards .card h3 {
-  margin-bottom: 20px;
-  font-size: 22px;
-}
-#spam_maxcoach .cards .card p {
-  font-size: 18px;
 }
 #spam_maxcoach img {
   width: 1220px;
