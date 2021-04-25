@@ -54,6 +54,26 @@
   box-sizing: border-box;
 }
 
+.card_number {
+  display: flex;
+  justify-content: space-around;
+}
+.card_number .data {
+  width: 25%;
+  font-size: 0;
+}
+.card_number .data .number {
+  font-size: 40px;
+  color: #AD611F;
+  font-weight: bolder;
+}
+.card_number .data .mean {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #6c6c6c;
+}
+
 .card_service {
   display: flex;
   flex-direction: column;
@@ -415,25 +435,6 @@ footer .privacy {
 #free_start .info .founder {
   font-size: 18px;
   color: #bcbcbc;
-}
-#free_start .numbers {
-  display: flex;
-  justify-content: space-around;
-}
-#free_start .numbers .data {
-  width: 25%;
-  font-size: 0;
-}
-#free_start .numbers .data .number {
-  font-size: 40px;
-  color: #AD611F;
-  font-weight: bolder;
-}
-#free_start .numbers .data .mean {
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #6c6c6c;
 }
 #free_start .get_start {
   margin-top: 120px;

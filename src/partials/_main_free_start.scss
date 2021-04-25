@@ -23,27 +23,6 @@
 		}
 	}
 
-	.numbers{
-		display: flex;
-		justify-content: space-around;
-		.data{
-			width: 25%;
-			font-size: 0;
-
-			.number{
-				font-size: 40px;
-				color: $green_sea;
-				font-weight: bolder;
-			}
-			.mean{
-				font-size: 18px;
-				font-weight: bold;
-				text-transform: uppercase;
-				color: $gray;
-			}
-		}
-	}
-
 	.get_start{
 		margin-top: 120px;
 		height: 1000px;
