@@ -1,5 +1,4 @@
 Vue.config.devtools = true;
-
 document.addEventListener('DOMContentLoaded', function () {
 	console.log('ciao ale');
 	var root = new Vue(
