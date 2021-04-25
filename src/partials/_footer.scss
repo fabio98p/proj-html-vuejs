@@ -1,3 +1,70 @@
 footer{
 	background-color: $gray_background;
+	.contained{
+		padding: 70px 0;
+		display: flex;
+		>*{
+			width: 50%;
+		}
+		.addres{
+			h4{
+				margin-bottom: 20px;
+				font-size: 25px;
+			}
+			.text{
+				>*{
+					margin-bottom: 10px;
+					font-size: 14px;
+				}
+				color: $gray;
+				a{
+					color: $gray;
+					text-decoration: none;			
+				}
+				.logos{
+					color: $silver;
+
+					font-size: 25px;
+					margin-top: 30px;
+					display: flex;
+					.logo{
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+		.contact{
+			display: flex;
+			>*{
+				width: 50%;
+				h4{
+					margin-bottom: 20px;
+					font-size: 25px;
+				}
+				ul{
+					display: flex;
+					color: $gray;
+					li{
+						width: 50%;
+						font-size: 14px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+			.explore{
+				ul{
+					flex-wrap: wrap;
+				}
+			}
+			.information{
+				ul{
+					flex-direction: column;
+				}
+			}
+		}
+	}
+	.privacy{
+		color: $gray;
+		padding-bottom: 50px;
+	}
 }
