@@ -22,23 +22,8 @@
 			<nav id="navbar" class="contained">
 				<img src="./assets/img/light-logo.png" alt="" class="left">
 				<div class="right">
-					<select>
-						<option>Home</option>
-					</select>
-					<select>
-						<option>Pages</option>
-					</select>
-					<select>
-						<option>Courses</option>
-					</select>
-					<select>
-						<option>Features</option>
-					</select>
-					<select>
-						<option>Blog</option>
-					</select>
-					<select>
-						<option>Shop</option>
+					<select v-for="selection in navbarSelect">
+						<option>{{selection.nameOption}}</option>
 					</select>
 					<div class="carrello">
 						<i class="fas fa-shopping-cart"></i>
@@ -68,38 +53,43 @@
 			</div>
 		</header>
 		<main>
-			<section id="free_start" class="contained">
-				<div class="info center">
-					<h2>Let passion and determination be the guide along the way and develop at your own pace that's
-						comfortable.</h2>
-					<p class="autor">fannie moreno</p>
-					<p class="founder">Founder & CEO</p>
-				</div>
-				<div class="card_number center">
-					<div v-for="data in 4" class="data">
-						<div class="number">1.926</div>
-						<p class="mean">finisced session</p>
+			<section id="free_start">
+				<div class="contained">
+					<div class="info center">
+						<h2>Let passion and determination be the guide along the way and develop at your own pace that's
+							comfortable.</h2>
+						<p class="autor">fannie moreno</p>
+						<p class="founder">Founder & CEO</p>
 					</div>
-				</div>
-				<div class="get_start">
-					<!-- todo: alcune immagini sono messe al contrario rispetto al testo, da risolvere -->
-					<div class="card_service">
-						<div class="card" v-for="(card, i) in 4" :class="(i == 2)?'margined':''">
-							<div class="text">
-								<h3>Graphic Design</h3>
-								<p>Have a passion for graphics and arts? Show your talents with confidence and
-									self-assertiveness.</p>
-							</div>
-							<img src="./assets/img/home-6-service-image-01.png" alt="">
+					<div class="card_number center">
+						<div v-for="card in cardNumber" class="data">
+							<div class="number">{{card.number}}</div>
+							<p class="mean">{{card.aboutNumber}}</p>
 						</div>
 					</div>
-					<div class="info_for_start">
-						<p>thoghether we can create</p>
-						<h1>Services We <span class="green">Can Provide</span> For My Clients.</h1>
-						<ul>
-							<li v-for="li in 4"><i class="fas fa-check"></i>Select & customize courses to your preferences</li>
-						</ul>
-						<button class="btn">Get started for free</button>
+					<div class="get_start">
+						<!-- todo: alcune immagini sono messe al contrario rispetto al testo, da risolvere -->
+						<div class="card_service">
+							<div class="card" v-for="(card, i) in cardService" :class="(i == 2)?'margined':''">
+								<img :src="`./assets/img/home-6-service-image-${card.img}.png`" alt="" v-if="card.imgPosition == 'up'">
+								<div class="text">
+									<h3>{{card.title}}</h3>
+									<p>{{card.paragraph}}</p>
+								</div>
+								<img :src="`./assets/img/home-6-service-image-${card.img}.png`" alt="" v-if="card.imgPosition == 'down'">
+							</div>
+						</div>
+						<div class="info_for_start">
+							<p>thoghether we can create</p>
+							<h1>Services We <span class="green">Can Provide</span> For My Clients.</h1>
+							<ul>
+								<li v-for="li in ulService">
+									<i class="fas fa-check"></i>
+									{{li.nameLi}}
+								</li>
+							</ul>
+							<button class="btn">Get started for free</button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -111,18 +101,18 @@
 						<h1>Latest Featured <span class="green">Courses</span></h1>
 					</div>
 					<div class="card_courses">
-						<div class="card" v-for="card in 6">
-							<img src="./assets/img/stock-full-hd-03-480x298.jpg" alt="">
+						<div class="card" v-for="card in cardCourses">
+							<img :src="`./assets/img/stock-full-hd-${card.img}-480x298.jpg`" alt="">
 							<div class="text">
-								<h3>Free</h3>
-								<p>Personal Finance: Financial Security Thinking & Principles</p>
+								<h3>{{card.cost}}</h3>
+								<p>{{card.paragraph}}</p>
 								<div class="lessons">
 									<i class="far fa-file-alt"></i>
-									<span>Lessons</span>
+									<span>{{card.lesson}}</span>
 								</div>
 								<div class="students">
 									<i class="far fa-user"></i>
-									<span>Students</span>
+									<span>{{card.student}}</span>
 								</div>
 							</div>
 						</div>
@@ -136,20 +126,20 @@
 				</div>
 				<div class="card_about">
 					<div class="card">
+					<!-- <div class="card" v-for="card in cardAbout"> -->
 						<div class="img">
-							<img src="./assets/img/testimonial-avata-02.jpg" alt="">
+							<img :src="`./assets/img/testimonial-avata-${cardAbout[1].img}.jpg`" alt="">
 						</div>
 						<div class="info">
-							<p>I am free to learn at my own pace, follow my own schedule and choose the subject I like.
-								Great study portal for people like me.</p>
-							<div class="autor">mina hollace</div>
-							<div class="work">/ Freelancer</div>
+							<p>{{cardAbout[1].paragraph}}</p>
+							<div class="autor">{{cardAbout[1].author}}</div>
+							<div class="work">{{cardAbout[1].work}}</div>
 						</div>
 					</div>
 				</div>
 				<div class="logos center">
-					<div class="logo" v-for="logo in 6">
-						<img src="./assets/img/client-logo-colored-01.png" alt="">
+					<div class="logo" v-for="logo in logosAbout">
+						<img :src="`./assets/img/client-logo-colored-${logo.logo}.png`" alt="">
 					</div>
 				</div>
 			</section>
@@ -160,20 +150,20 @@
 						<h1>Latest on <span class="green">Our Blogs</span></h1>
 					</div>
 					<div class="card_blog">
-						<div class="card" v-for="card in 3">
+						<div class="card" v-for="card in cardBlog">
 							<div class="img">
-								<img src="./assets/img/artist-blog-03-480x325.jpeg" alt="">
+								<img :src="`./assets/img/artist-blog-${card.img}-480x325.jpg`" alt="">
 							</div>
 							<div class="text">
-								<div class="artist">artist</div>
-								<p>Brush Strokes Energize Trees in Paintings</p>
+								<div class="artist">{{card.work}}</div>
+								<p>{{card.paragraph}}</p>
 								<div class="data">
 									<i class="far fa-calendar"></i>
-									<span>May 15, 2020</span>
+									<span>{{card.data}}</span>
 								</div>
 								<div class="view">
 									<i class="far fa-eye"></i>
-									<span>688 views</span>
+									<span>{{card.views}} views</span>
 								</div>
 							</div>
 						</div>
@@ -187,11 +177,10 @@
 						<h1 class="title">Glad to <span class="green">Help You</span> Learn</h1>
 					</div>
 					<div class="card_help">
-						<div class="card" v-for="card in 4">
-							<i class="far fa-flag"></i>
-							<h3>Idea Discussion</h3>
-							<p>Get teamed up with the specialists who work and teach coding for years at famous
-								universities.</p>
+						<div class="card" v-for="card in cardHelp">
+							<i :class="card.icon"></i>
+							<h3>{{card.title}}</h3>
+							<p>{{card.paragraph}}</p>
 						</div>
 					</div>
 					<img src="./assets/img/home-6-services-image-1024x411.png" alt="">
@@ -212,8 +201,8 @@
 						<p>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</p>
 						<a href="#">support@maxcoach.com</a>
 						<div class="logos">
-							<div class="logo" v-for="logo in 4">
-								<i class="fab fa-facebook-square"></i>
+							<div class="logo" v-for="logo in logosSocial">
+								<i :class="logo.icon"></i>
 							</div>
 						</div>
 					</div>
@@ -225,8 +214,8 @@
 						</li>
 						<li>
 							<ul class="no_style">
-								<li v-for="explore in 6">
-									Start here
+								<li v-for="explore in footerInfo.explore">
+									{{explore.text}}
 								</li>
 							</ul>
 						</li>
@@ -237,8 +226,8 @@
 						</li>
 						<li>
 							<ul class="no_style">
-								<li v-for="explore in 4">
-									Membership
+								<li v-for="information in footerInfo.information">
+									{{information.text}}
 								</li>
 							</ul>
 						</li>
@@ -247,15 +236,7 @@
 			</div>
 			<div class="privacy center">© 2020 Maxcoach. All Rights Reserved</div>
 		</footer>
-
-
-
-
 	</div>
-
-
-
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="./assets/js/main.js"></script>

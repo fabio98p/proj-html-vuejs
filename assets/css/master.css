@@ -84,6 +84,8 @@
   background-color: white;
   margin: 25px 0;
   box-shadow: 1px 1px 5px 5px #f7f7f7;
+  display: flex;
+  flex-direction: column;
 }
 .card_service .card.margined {
   margin-top: 120px;
@@ -100,7 +102,8 @@
 }
 .card_service .card img {
   padding-right: 20px;
-  width: 100%;
+  padding-top: 20px;
+  margin: 0 auto;
 }
 
 .card_courses {
@@ -325,6 +328,7 @@ nav .right .search button {
   padding: 30px;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 1px 1px 5px 5px #e6e6e6;
 }
 #jumbo .positionament .card .placeolder_img {
   height: 100%;
@@ -412,62 +416,62 @@ footer .privacy {
   padding-bottom: 50px;
 }
 
-#free_start {
+#free_start .contained {
   padding-top: 318px;
   background-image: url(../../assets/img/background-pattern-grid-line.png);
 }
-#free_start .info {
+#free_start .contained .info {
   margin-bottom: 150px;
 }
-#free_start .info h2 {
+#free_start .contained .info h2 {
   width: 60%;
   margin: 0 auto;
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 30px;
 }
-#free_start .info .autor {
+#free_start .contained .info .autor {
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 15px;
   font-weight: bold;
 }
-#free_start .info .founder {
+#free_start .contained .info .founder {
   font-size: 18px;
   color: #bcbcbc;
 }
-#free_start .get_start {
+#free_start .contained .get_start {
   margin-top: 120px;
   height: 1000px;
   display: flex;
   justify-content: space-between;
 }
-#free_start .get_start > * {
+#free_start .contained .get_start > * {
   width: 50%;
 }
-#free_start .get_start .info_for_start {
+#free_start .contained .get_start .info_for_start {
   padding: 100px;
 }
-#free_start .get_start .info_for_start p {
+#free_start .contained .get_start .info_for_start p {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-#free_start .get_start .info_for_start h1 {
+#free_start .contained .get_start .info_for_start h1 {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 40px;
 }
-#free_start .get_start .info_for_start ul {
+#free_start .contained .get_start .info_for_start ul {
   list-style-type: none;
 }
-#free_start .get_start .info_for_start ul li {
+#free_start .contained .get_start .info_for_start ul li {
   margin-bottom: 20px;
 }
-#free_start .get_start .info_for_start ul li i {
+#free_start .contained .get_start .info_for_start ul li i {
   color: #AD611F;
   margin-right: 25px;
 }
-#free_start .get_start .info_for_start button {
+#free_start .contained .get_start .info_for_start button {
   margin-top: 20px;
 }
 
