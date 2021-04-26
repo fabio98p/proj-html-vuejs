@@ -11,6 +11,17 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _partial_js_data_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./partial_js/_data.js */ "./src/partial_js/_data.js");
 Vue.config.devtools = true;
+$(window).on('load resize scroll', function () {
+  $('.bg-static').each(function () {
+    var windowTop = $(window).scrollTop();
+    var elementTop = $(this).offset().top;
+    var leftPosition = windowTop * (1 / 4) - elementTop + 600;
+    $(this).find('.bg-move').css({
+      bottom: leftPosition
+    });
+    console.log(windowTop, elementTop, leftPosition);
+  });
+});
 
 
 

@@ -39,13 +39,13 @@
 					<p>Get teamed up with peolpe of the sabe will</p>
 					<button class="btn">Get started for free</button>
 				</div>
-				<div class="positionament">
-					<img class="left" src="./assets/img/home-6-hero-left-person.png" alt="">
+				<div class="positionament section bg-static">
+					<img class="left bg-move" src="./assets/img/home-6-hero-left-person.png" alt="">
 					<div class="card">
 						<img class="placeolder_img" src="./assets/img/home-6-hero-poster-final.jpg" alt="">
 						<img class="logo_youtube" src="./assets/img/icon-youtube-play.png" alt="">
 					</div>
-					<img class="right" src="./assets/img/home-6-hero-right-person.png" alt="">
+					<img class="right bg-move" src="./assets/img/home-6-hero-right-person.png" alt="">
 				</div>
 			</div>
 		</header>
@@ -130,7 +130,9 @@
 					<div class="card">
 					<!-- <div class="card" v-for="card in cardAbout"> -->
 						<div class="img">
-							<img :src="`./assets/img/testimonial-avata-${cardAbout[1].img}.jpg`" alt="">
+							<img class="pink_img" src="" alt="">
+							<img class="green_img" src="./assets/img/maxcoach-shape-05.png" alt="">
+							<img class="main_img" :src="`./assets/img/testimonial-avata-${cardAbout[1].img}.jpg`" alt="">
 						</div>
 						<div class="info">
 							<p>{{cardAbout[1].paragraph}}</p>
@@ -245,6 +247,7 @@
 
 	</div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="./assets/js/main.js"></script>

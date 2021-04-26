@@ -1,4 +1,17 @@
 Vue.config.devtools = true;
+
+$(window).on('load resize scroll', function() {
+  $('.bg-static').each(function() {
+    var windowTop = $(window).scrollTop();
+    var elementTop = $(this).offset().top;
+    var leftPosition = windowTop *(1/4) - elementTop + 600;
+      $(this)
+        .find('.bg-move')
+        .css({ bottom: leftPosition});
+		console.log(windowTop, elementTop, leftPosition);
+  });
+});
+
 import similAxsios from "./partial_js/_data.js"
 import cardNumber from "./partial_js/_data.js"
 import cardService from "./partial_js/_data.js"
