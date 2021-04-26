@@ -103,7 +103,7 @@
 .card_service .card img {
   padding-right: 20px;
   padding-top: 20px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .card_courses {
@@ -120,10 +120,14 @@
 .card_courses .card:hover {
   background-color: white;
 }
-.card_courses .card img {
+.card_courses .card .img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  overflow: hidden;
+}
+.card_courses .card .img img {
+  height: 100%;
 }
 .card_courses .card .text {
   margin-left: 30px;
@@ -442,7 +446,7 @@ footer .privacy {
 }
 #free_start .contained .get_start {
   margin-top: 120px;
-  height: 1000px;
+  height: 1150px;
   display: flex;
   justify-content: space-between;
 }
@@ -481,6 +485,11 @@ footer .privacy {
 }
 #choose_abbonament button {
   margin: 30px auto 0 auto;
+  display: flex;
+  align-items: center;
+}
+#choose_abbonament button i {
+  font-size: 18px;
 }
 
 #about_maxcoach {
@@ -488,6 +497,7 @@ footer .privacy {
 }
 #about_maxcoach .logos {
   display: flex;
+  align-items: center;
 }
 #about_maxcoach .logos .logo {
   width: calc(100% * (1/6));

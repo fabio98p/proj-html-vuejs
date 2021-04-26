@@ -102,7 +102,9 @@
 					</div>
 					<div class="card_courses">
 						<div class="card" v-for="card in cardCourses">
-							<img :src="`./assets/img/stock-full-hd-${card.img}-480x298.jpg`" alt="">
+							<div class="img">
+								<img :src="`./assets/img/stock-full-hd-${card.img}-480x298.jpg`" alt="">
+							</div>
 							<div class="text">
 								<h3>{{card.cost}}</h3>
 								<p>{{card.paragraph}}</p>
@@ -116,7 +118,7 @@
 								</div>
 							</div>
 						</div>
-						<button class="btn">View all courses</button>
+						<button class="btn">View all courses  <i class="fas fa-long-arrow-alt-right"></i></button>
 					</div>
 				</div>
 			</section>

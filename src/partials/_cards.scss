@@ -46,7 +46,7 @@
 		img{
 			padding-right: 20px;
 			padding-top: 20px;
-			margin: 0 auto;
+			width: 100%;
 		}
 	}
 }
@@ -63,10 +63,14 @@
 		&:hover{
 			background-color: white;
 		}
-		img{
+		.img{
 			width: 150px;
 			height: 150px;
 			border-radius: 50%;
+			overflow: hidden;
+			img{
+				height: 100%;
+			}
 		}
 		.text{
 			margin-left: 30px;
