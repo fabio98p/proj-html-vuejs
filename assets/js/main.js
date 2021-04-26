@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var root = new Vue({
     el: '#root',
     data: {
-      navbarSelect: _partial_js_data_js__WEBPACK_IMPORTED_MODULE_0__.default.navbarSelect,
+      navbarAnchor: _partial_js_data_js__WEBPACK_IMPORTED_MODULE_0__.default.navbarAnchor,
       cardNumber: _partial_js_data_js__WEBPACK_IMPORTED_MODULE_0__.default.cardNumber,
       cardService: _partial_js_data_js__WEBPACK_IMPORTED_MODULE_0__.default.cardService,
       ulService: _partial_js_data_js__WEBPACK_IMPORTED_MODULE_0__.default.ulService,
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     methods: {},
     compiuted: {},
     created: function created() {
-      console.log(this.cardAbout[1].img);
+      console.log(this.navbarAnchor);
     }
   });
 });
@@ -59,18 +59,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 var similAxsios = {
-  navbarSelect: [{
-    nameOption: "Home"
+  navbarAnchor: [{
+    name: "Home",
+    link: "#"
   }, {
-    nameOption: "Pages"
+    name: "Pages",
+    link: "#"
   }, {
-    nameOption: "Courses"
+    name: "Courses",
+    link: "#"
   }, {
-    nameOption: "Features"
+    name: "Features",
+    link: "#"
   }, {
-    nameOption: "Blog"
+    name: "Blog",
+    link: "#"
   }, {
-    nameOption: "Shop"
+    name: "Shop",
+    link: "#"
   }],
   cardNumber: [{
     number: "1.926",
@@ -233,26 +239,36 @@ var similAxsios = {
   }],
   footerInfo: {
     explore: [{
-      text: "Start Here"
+      text: "Start Here",
+      link: "#"
     }, {
-      text: "Success story"
+      text: "Success story",
+      link: "#"
     }, {
-      text: "Blog"
+      text: "Blog",
+      link: "#"
     }, {
-      text: "Courses"
+      text: "Courses",
+      link: "#"
     }, {
-      text: "About us"
+      text: "About us",
+      link: "#"
     }, {
-      text: "Contact us"
+      text: "Contact us",
+      link: "#"
     }],
     information: [{
-      text: "Membership"
+      text: "Membership",
+      link: "#"
     }, {
-      text: "Purchase guide"
+      text: "Purchase guide",
+      link: "#"
     }, {
-      text: "Privacy policy"
+      text: "Privacy policy",
+      link: "#"
     }, {
-      text: "Terms of service"
+      text: "Terms of service",
+      link: "#"
     }]
   }
 };

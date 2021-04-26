@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		{
 			el: '#root',
 			data: {
-				navbarSelect: similAxsios.navbarSelect,
+				navbarAnchor: similAxsios.navbarAnchor,
 				cardNumber: similAxsios.cardNumber,
 				cardService: similAxsios.cardService,
 				ulService: similAxsios.ulService,
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 
 			created: function () {
-				console.log(this.cardAbout[1].img);
+				console.log(this.navbarAnchor);
 			}
 		}
 	);

@@ -16,15 +16,11 @@
 	<!-- https://maxcoach.thememove.com/main/remote-training/ -->
 	<div id="root" class="gray_text">
 
-		<!-- <div class="hello">{{hello}}</div> -->
-
 		<header>
 			<nav id="navbar" class="contained">
 				<img src="./assets/img/light-logo.png" alt="" class="left">
 				<div class="right">
-					<select v-for="selection in navbarSelect">
-						<option>{{selection.nameOption}}</option>
-					</select>
+					<a v-for="selection in navbarAnchor" :href="selection.link">{{selection.name}}<i class="fas fa-chevron-down"></i></a>
 					<div class="carrello">
 						<i class="fas fa-shopping-cart"></i>
 						<div class="number">0</div>
@@ -36,6 +32,7 @@
 					</div>
 				</div>
 			</nav>
+
 			<div id="jumbo" class="center">
 				<div class="contained">
 					<h1>Learn At Your Own Pace!</h1>
@@ -52,6 +49,7 @@
 				</div>
 			</div>
 		</header>
+
 		<main>
 			<section id="free_start">
 				<div class="contained">
@@ -93,6 +91,7 @@
 					</div>
 				</div>
 			</section>
+
 			<section id="choose_abbonament">
 				<div class="contained">
 
@@ -122,6 +121,7 @@
 					</div>
 				</div>
 			</section>
+
 			<section id="about_maxcoach" class="contained">
 				<div class="title">
 					<h1 class="center">Why People Talk About <span class="green">MaxCoach</span>?</h1>
@@ -145,6 +145,7 @@
 					</div>
 				</div>
 			</section>
+
 			<section id="when_finished">
 				<div class="contained">
 					<div class="title">
@@ -172,6 +173,7 @@
 					</div>
 				</div>
 			</section>
+
 			<section id="spam_maxcoach">
 				<div class="contained">
 					<div class="title">
@@ -188,12 +190,14 @@
 					<img src="./assets/img/home-6-services-image-1024x411.png" alt="">
 				</div>
 			</section>
+
 			<section id="start_now" class="center">
 				<h3>Start today for getting <span class="green">Online Certification</span></h3>
 				<h2>You can be your own guiding star with our help!</h2>
 				<button class="btn">Get started now</button>
 			</section>
 		</main>
+
 		<footer>
 			<div class="contained">
 				<div class="addres">
@@ -217,19 +221,19 @@
 						<li>
 							<ul class="no_style">
 								<li v-for="explore in footerInfo.explore">
-									{{explore.text}}
+									<a :href="explore.link">{{explore.text}}</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
 					<ul class="information no_style">
 						<li>
-							<h4>information</h4>
+							<h4>Information</h4>
 						</li>
 						<li>
 							<ul class="no_style">
 								<li v-for="information in footerInfo.information">
-									{{information.text}}
+									<a :href="information.link">{{information.text}}</a>
 								</li>
 							</ul>
 						</li>
@@ -238,7 +242,9 @@
 			</div>
 			<div class="privacy center">© 2020 Maxcoach. All Rights Reserved</div>
 		</footer>
+
 	</div>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="./assets/js/main.js"></script>

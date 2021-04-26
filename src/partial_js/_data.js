@@ -1,11 +1,29 @@
 const similAxsios = {
-	navbarSelect: [
-		{ nameOption: "Home" },
-		{ nameOption: "Pages" },
-		{ nameOption: "Courses" },
-		{ nameOption: "Features" },
-		{ nameOption: "Blog" },
-		{ nameOption: "Shop" },
+	navbarAnchor: [
+		{
+			name: "Home",
+			link: "#",
+		},
+		{
+			name: "Pages",
+			link: "#",
+		},
+		{
+			name: "Courses",
+			link: "#",
+		},
+		{
+			name: "Features",
+			link: "#",
+		},
+		{
+			name: "Blog",
+			link: "#",
+		},
+		{
+			name: "Shop",
+			link: "#",
+		},
 	],
 
 	cardNumber: [
@@ -26,7 +44,7 @@ const similAxsios = {
 			aboutNumber: "Satisfaction rate",
 		},
 	],
-	
+
 	cardService: [
 		{
 			title: "Graphic Design",
@@ -53,14 +71,14 @@ const similAxsios = {
 			imgPosition: "up",
 		},
 	],
-	
+
 	ulService: [
 		{ nameLi: "Select & customize courses to your preferences" },
 		{ nameLi: "Change the tutor and make arrangements" },
 		{ nameLi: "Participate in events to join others" },
 		{ nameLi: "Get the desired certificate delivered at house" },
 	],
-	
+
 	cardCourses: [
 		{
 			img: "01",
@@ -105,7 +123,7 @@ const similAxsios = {
 			student: "76",
 		},
 	],
-	
+
 	cardAbout: [
 		{
 			img: "01",
@@ -132,7 +150,7 @@ const similAxsios = {
 			work: "/Multimedia Admin",
 		},
 	],
-	
+
 	logosAbout: [
 		{ logo: "01" },
 		{ logo: "02" },
@@ -141,7 +159,7 @@ const similAxsios = {
 		{ logo: "05" },
 		{ logo: "06" },
 	],
-	
+
 	cardBlog: [
 		{
 			img: "01",
@@ -165,7 +183,7 @@ const similAxsios = {
 			views: "397",
 		},
 	],
-	
+
 	cardHelp: [
 		{
 			icon: "far fa-flag",
@@ -190,27 +208,57 @@ const similAxsios = {
 	],
 
 	logosSocial: [
-		{ icon: "fab fa-facebook-square"},
-		{ icon: "fab fa-twitter"},
-		{ icon: "fab fa-instagram"},
-		{ icon: "fab fa-linkedin"},
+		{ icon: "fab fa-facebook-square" },
+		{ icon: "fab fa-twitter" },
+		{ icon: "fab fa-instagram" },
+		{ icon: "fab fa-linkedin" },
 
 	],
-	
+
 	footerInfo: {
 		explore: [
-			{ text: "Start Here" },
-			{ text: "Success story" },
-			{ text: "Blog" },
-			{ text: "Courses" },
-			{ text: "About us" },
-			{ text: "Contact us" },
+			{
+				text: "Start Here",
+				link: "#",
+			},
+			{
+				text: "Success story",
+				link: "#",
+			},
+			{
+				text: "Blog",
+				link: "#",
+			},
+			{
+				text: "Courses",
+				link: "#",
+			},
+			{
+				text: "About us",
+				link: "#",
+			},
+			{
+				text: "Contact us",
+				link: "#",
+			},
 		],
 		information: [
-			{ text: "Membership" },
-			{ text: "Purchase guide" },
-			{ text: "Privacy policy" },
-			{ text: "Terms of service" },
+			{
+				text: "Membership",
+				link: "#",
+			},
+			{
+				text: "Purchase guide",
+				link: "#",
+			},
+			{
+				text: "Privacy policy",
+				link: "#",
+			},
+			{
+				text: "Terms of service",
+				link: "#",
+			},
 		]
 	}
 }
